@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
     <title>formulaire interactif</title>
@@ -14,7 +14,9 @@
 <body>
 
     <div class="container fluid">
-
+        <div class="title">
+            <h1>FLIGHT TO WORLD OF CUP RUSSIA</h1>
+        </div>
         <form action="js/script.js" method="post">
 
             <div class="row identifiant">
@@ -32,21 +34,21 @@
             </div>
             <div class="row email">
                 <label for="email">email</label>
-                    <input type="email" name="email" value=""  id="email">
+                <input type="email" name="email" value="" id="email">
             </div>
-                <div class="row buttonsend">
-                    <button type="button" name="button" id="btnsend">send</button>
-                </div>
-                <div class="row reset">
-                <button type="reset" name="button">reset</button>
-                </div>
-            </form>
+            <div class="row buttonsend">
+                <button type="button" name="button" id="btnsend">send</button>
+            </div>
+            <div class="row reset">
+                <button type="reset" id="reset" name="button">reset</button>
+            </div>
+        </form>
     </div>
 
 
-    <script  src="node_modules/jquery/dist/jquery.js"></script>
-    <script  src=js/script.js>
-
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src=js/script.js>
     </script>
-    </body>
+</body>
+
 </html>

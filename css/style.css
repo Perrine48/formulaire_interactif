@@ -2,6 +2,15 @@ div {
     padding: 2%;
 }
 
+.title{
+background-color: linear-gradient (90 deg, rgb(70, 228, 228), rgb(230, 42, 59),);
+}
+ h1{
+     text-align: center;
+     color: white;
+    
+ }
+
 label {
     margin-right: 3%;
     width: 5%;
@@ -9,4 +18,22 @@ label {
 
 button {
     width: 27%;
+}
+
+
+#btnsend{
+background-color: rgb(64, 236, 4);
+}
+#reset {
+    background-color: rgb(252, 0, 0);
+    color: white;
+}
+
+
+.container {
+
+border: double rgb(97, 155, 255) 8px;
+border-radius: 10px;
+box-shadow: 10px 5px 5px rgb(255, 92, 97);
+
 }
