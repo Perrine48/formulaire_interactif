@@ -35,10 +35,23 @@ $(document).ready(function() {
 
         var username = $('#identifiant').val()
         var usernamebor = $('#identifiant')
-        if (username.length > 8) {
+        if (username.length > 15) {
             $(usernamebor).css("border", "solid red 5px");
             alert('Votre pseudo ne doit pas dépasser 8 caractères !')
         }
 
+        var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+        var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+
+        if (strongRegex.test(password)) {
+            $('.password').append('<p id="strong">Votre mot de passe est fort</p>');
+            $('#strong').css('color', 'green')
+        } else if (mediumRegex.test(password)) {
+            $('.password').append('<p id="medium">Votre mot de passe est moyen</p>')
+            $('#medium').css('color', 'orange')
+        } else {
+            $('.password').append('<p id="weak">Votre mot de passe est faible</p>')
+            $('#weak').css('color', 'red')
+        }
     })
     })
